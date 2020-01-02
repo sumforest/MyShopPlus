@@ -41,8 +41,28 @@
         </dependency>
         <dependency>
             <groupId>com.sen.myshop.plus</groupId>
+            <artifactId>cloud-message-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sen.myshop.plus</groupId>
             <artifactId>business-profile-feign</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sen.myshop.plus</groupId>
+            <artifactId>cloud-message-feign</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
         </dependency>
 
         <!-- Spring Boot -->

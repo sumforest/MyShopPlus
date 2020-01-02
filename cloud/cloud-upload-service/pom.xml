@@ -80,12 +80,6 @@
             <artifactId>cloud-upload-feign</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!-- Projects -->
-        <dependency>
-            <groupId>com.sen.myshop.plus</groupId>
-            <artifactId>commons-dto</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
 
     <build>

@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Date: 2019/12/28 23:33
  * @Description:
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackageClasses = {BusinessOauth2Application.class}, scanBasePackages = "com.sen.myshop.plus.cloud.feign")
 @EnableDiscoveryClient
 @EnableFeignClients
 public class BusinessOauth2Application {

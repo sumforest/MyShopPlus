@@ -13,6 +13,7 @@
         <!-- Commons -->
         <okhttp3.version>4.1.0</okhttp3.version>
         <feign-okhttp.version>10.3.0</feign-okhttp.version>
+        <bitwalker.version>1.21</bitwalker.version>
 
         <!-- Native Cloud -->
         <dubbo.version>2.7.3</dubbo.version>
@@ -169,6 +170,11 @@
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-okhttp</artifactId>
                 <version>${feign-okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${bitwalker.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

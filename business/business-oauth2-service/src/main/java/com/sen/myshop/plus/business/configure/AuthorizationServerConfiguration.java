@@ -1,11 +1,13 @@
 package com.sen.myshop.plus.business.configure;
 
+import io.lettuce.core.support.RedisClientFactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
@@ -13,8 +15,12 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 
 import javax.sql.DataSource;
 
@@ -33,6 +39,9 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private RedisConnectionFactory redisConnectionFactory;
+
     /**
      * 配置数据源
      * @return
@@ -50,7 +59,10 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
      */
     @Bean
     public TokenStore tokenStore(){
-        return new InMemoryTokenStore();
+        //基于数据库存储token
+        // return new JdbcTokenStore(dataSource());
+        //基于redis存储token
+        return new RedisTokenStore(redisConnectionFactory);
     }
 
     /**
@@ -61,7 +73,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints.authenticationManager(authenticationManager)
-                //指定token的存储位置
+                //指定数据库token的存储位置
                 .tokenStore(tokenStore());
     }
 
@@ -76,9 +88,27 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .allowFormAuthenticationForClients();
     }
 
+    /**
+     * 基于数据库实现客户端配置
+     * @return
+     */
+    @Bean
+    public ClientDetailsService clientDetailsService(){
+        return new JdbcClientDetailsService(dataSource());
+    }
+
+    /**
+     * 配置客户端
+     * @param clients
+     * @throws Exception
+     */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory()
+        //基于数据库管理token
+        clients.withClientDetails(clientDetailsService());
+
+        //以下是基于内存管理token
+        /*clients.inMemory()
                 //客户端Id
                 .withClient("client")
                 //客户端密钥
@@ -92,7 +122,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 //设置访问令牌的有效时间为1天
                 .accessTokenValiditySeconds(60 * 60 * 24)
                 //设置刷新令牌的时间为30天
-                .refreshTokenValiditySeconds(60 * 60 * 24 * 30);
+                .refreshTokenValiditySeconds(60 * 60 * 24 * 30);*/
     }
 
 

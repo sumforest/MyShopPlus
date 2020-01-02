@@ -35,6 +35,15 @@
     <modules>
         <module>ums-admin-provider-api</module>
         <module>ums-admin-provider-service</module>
+        <module>ums-admin-login-log-api</module>
+        <module>ums-admin-login-log-provider</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.sen.myshop.plus</groupId>
+            <artifactId>commons-provider</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 </project>

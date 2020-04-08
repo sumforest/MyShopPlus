@@ -2,58 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6b48dd0-a3f8-4274-951a-b06b142c71b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-api/src/main/java/com/sen/myshop/plus/cloud/api/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-dto/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-dto/src/main/java/com/sen/myshop/plus/cloud/dto/UmsAdminLoginLogDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-feign/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-feign/src/main/java/com/sen/myshop/plus/cloud/feign/MessageFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-feign/src/main/java/com/sen/myshop/plus/cloud/feign/fallback/MessageFeignFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/src/main/java/com/sen/myshop/plus/cloud/ProducerMessageApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/src/main/java/com/sen/myshop/plus/cloud/configuration/MessageResourceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/src/main/java/com/sen/myshop/plus/cloud/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/src/main/java/com/sen/myshop/plus/cloud/message/MessageResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/src/main/java/com/sen/myshop/plus/cloud/producer/MessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud/cloud-message-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/common-utils/src/main/java/com/sen/myshop/plus/business/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/common-utils/src/main/java/com/sen/myshop/plus/business/BusinessExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/common-utils/src/main/java/com/sen/myshop/plus/business/BusinessStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/common-utils/src/main/java/com/sen/myshop/plus/commons/dto/IpInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/common-utils/src/main/java/com/sen/myshop/plus/commons/dto/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/common-utils/src/main/java/com/sen/myshop/plus/commons/utils/UserAgentUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/commons-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sen/myshop/plus/gateway/exception/ExceptionConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sen/myshop/plus/gateway/exception/JsonExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/message-admin-login-log/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/message-admin-login-log/src/main/java/com/sen/myshop/plus/message/ConsumerAdminLoginLogApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/message-admin-login-log/src/main/java/com/sen/myshop/plus/message/consumer/AdminLoginLogConsume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/message-admin-login-log/src/main/java/com/sen/myshop/plus/message/sink/AdminLoginLogSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/message-admin-login-log/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/ums-admin-login-log-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/ums-admin-login-log-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/ums-admin-login-log-provider/src/main/java/com/sen/myshop/plus/ums/login/log/provider/UmsAdminLoginLogApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/ums-admin-login-log-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/ums-admin-login-log-provider/src/test/java/com/sen/myshop/plus/ums/login/log/provider/UmsAdminLoginLogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/business-oauth2-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business/business-oauth2-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/business-oauth2-service/src/main/java/com/sen/myshop/plus/business/BusinessOauth2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/business-oauth2-service/src/main/java/com/sen/myshop/plus/business/BusinessOauth2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/business-oauth2-service/src/main/java/com/sen/myshop/plus/business/configure/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/business-oauth2-service/src/main/java/com/sen/myshop/plus/business/configure/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/business-oauth2-service/src/main/java/com/sen/myshop/plus/business/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/business-oauth2-service/src/main/java/com/sen/myshop/plus/business/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/business-oauth2-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/business/business-oauth2-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/cloud-upload-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/cloud-upload-feign/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/cloud-upload-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/cloud-upload-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/common-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons/common-utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/commons-dto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons/commons-dto/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/ums-admin-provider-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/ums-admin-provider-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/ums-admin-provider-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/ums-admin-provider-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/ums-admin-provider-service/src/main/java/tk/mybatis/mapper/MyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/commons-provider/src/main/java/tk/mybatis/mapper/MyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/ums-admin-provider-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/ums-admin-provider-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/business-oauth2-service/business-oauth2-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/business/business-oauth2-service/business-oauth2-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/cloud-upload-service/target/classes/com/sen/myshop/plus/cloud/controller/UploadFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/cloud-upload-service/target/classes/com/sen/myshop/plus/cloud/controller/UploadFileController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +97,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud/cloud-message-dto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -297,11 +249,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
@@ -325,12 +272,37 @@
       <workItem from="1577814658073" duration="5751000" />
       <workItem from="1577861002676" duration="2590000" />
       <workItem from="1577879196279" duration="6486000" />
-      <workItem from="1577945948796" duration="25173000" />
+      <workItem from="1577945948796" duration="26356000" />
+      <workItem from="1578044370543" duration="10000" />
+      <workItem from="1578075803636" duration="243000" />
+      <workItem from="1578395599610" duration="26000" />
+      <workItem from="1578682026401" duration="8000" />
+      <workItem from="1581138171109" duration="14000" />
+      <workItem from="1581138780373" duration="294000" />
+      <workItem from="1581239196162" duration="48000" />
+      <workItem from="1581306216132" duration="3274000" />
+      <workItem from="1581351523968" duration="686000" />
+      <workItem from="1581440728169" duration="94000" />
+      <workItem from="1581603431527" duration="17000" />
     </task>
+    <task id="LOCAL-00001" summary="0.0.1 commit">
+      <created>1577979790802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577979790802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="0.0.1 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.1 commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Menus_and_Toolbars" timestamp="1577814692020">
@@ -345,42 +317,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577977519716" />
+    <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581306246105">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1581306246105" />
+    <state x="241" y="3" key="CommitChangelistDialog2" timestamp="1586355755522">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="241" y="3" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586355755522" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1577814807706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577814807706" />
-    <state width="1128" height="281" key="GridCell.Tab.0.bottom" timestamp="1577979492472">
+    <state width="1128" height="281" key="GridCell.Tab.0.bottom" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577979492472" />
-    <state width="1128" height="281" key="GridCell.Tab.0.center" timestamp="1577979492471">
+    <state width="1128" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
+    <state width="1128" height="281" key="GridCell.Tab.0.center" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577979492471" />
-    <state width="1128" height="281" key="GridCell.Tab.0.left" timestamp="1577979492470">
+    <state width="1128" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
+    <state width="1128" height="281" key="GridCell.Tab.0.left" timestamp="1577982753090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577979492470" />
-    <state width="1128" height="281" key="GridCell.Tab.0.right" timestamp="1577979492472">
+    <state width="1128" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577982753090" />
+    <state width="1128" height="281" key="GridCell.Tab.0.right" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577979492472" />
-    <state width="1128" height="281" key="GridCell.Tab.1.bottom" timestamp="1577979492472">
+    <state width="1128" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
+    <state width="1128" height="281" key="GridCell.Tab.1.bottom" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577979492472" />
-    <state width="1128" height="281" key="GridCell.Tab.1.center" timestamp="1577979492472">
+    <state width="1128" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
+    <state width="1128" height="281" key="GridCell.Tab.1.center" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577979492472" />
-    <state width="1128" height="281" key="GridCell.Tab.1.left" timestamp="1577979492472">
+    <state width="1128" height="281" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
+    <state width="1128" height="281" key="GridCell.Tab.1.left" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577979492472" />
-    <state width="1128" height="281" key="GridCell.Tab.1.right" timestamp="1577979492472">
+    <state width="1128" height="281" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
+    <state width="1128" height="281" key="GridCell.Tab.1.right" timestamp="1577982753091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1128" height="281" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577979492472" />
+    <state width="1128" height="281" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577982753091" />
     <state width="1128" height="281" key="GridCell.Tab.2.bottom" timestamp="1577957377476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -409,6 +389,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="540" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1577974755415" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577979817157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577979817157" />
     <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1577975278648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

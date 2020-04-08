@@ -24,3 +24,4 @@ rebel.xml
 ## Other ##
 logs/
 temp/
+**/node_modules

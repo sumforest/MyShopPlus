@@ -11,7 +11,7 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 /**
  * @Auther: Sen
  * @Date: 2019/12/31 19:15
- * @Description:
+ * @Description: 配置资源服务器
  */
 @Configuration
 @EnableResourceServer

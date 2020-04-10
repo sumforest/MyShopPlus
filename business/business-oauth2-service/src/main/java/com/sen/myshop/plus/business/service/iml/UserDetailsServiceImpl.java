@@ -29,7 +29,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         UmsAdmin admin = umsAdminService.getAdmin(s);
         if (admin != null) {
             List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
-            //所有用户默认有一个User权限
+            //所有用户默认有一个User角色
             SimpleGrantedAuthority simpleGrantedAuthority = new SimpleGrantedAuthority("User");
             grantedAuthorities.add(simpleGrantedAuthority);
             return new User(admin.getUsername(), admin.getPassword(), grantedAuthorities);

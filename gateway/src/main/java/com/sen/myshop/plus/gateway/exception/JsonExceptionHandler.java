@@ -19,7 +19,6 @@ import org.springframework.web.reactive.result.view.ViewResolver;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;

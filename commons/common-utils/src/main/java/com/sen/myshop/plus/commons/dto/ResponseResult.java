@@ -1,7 +1,6 @@
 package com.sen.myshop.plus.commons.dto;
 
 import lombok.Data;
-
 import java.io.Serializable;
 
 /**

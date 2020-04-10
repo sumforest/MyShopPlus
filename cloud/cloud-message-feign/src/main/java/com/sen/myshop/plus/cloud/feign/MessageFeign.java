@@ -10,10 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
  * @Auther: Sen
  * @Date: 2020/1/2 14:47
- * @Description:
+ * @Description: 通过HTTP调用日志服务
  */
 @FeignClient(value = "cloud-message-feign", path = "message", configuration = FeignConfiguration.class, fallback = MessageFeignFallback.class)
-
 public interface MessageFeign {
 
     @PostMapping(value = "admin/login/log")

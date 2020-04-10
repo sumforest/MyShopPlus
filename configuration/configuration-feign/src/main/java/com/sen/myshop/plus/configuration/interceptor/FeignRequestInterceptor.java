@@ -12,7 +12,7 @@ import java.util.Enumeration;
 /**
  * @Auther: Sen
  * @Date: 2019/12/31 02:19
- * @Description: 实现RequestInterceptor拦截器，在feign掉用Spring Cloud服务的时候带上access_token
+ * @Description: 实现RequestInterceptor拦截器，在feign调用用Spring Cloud服务的时候带上access_token
  * 实现单点登录
  */
 public class FeignRequestInterceptor implements RequestInterceptor {

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @Auther: Sen
  * @Date: 2020/1/1 01:57
- * @Description: 此配置只用与Dubbo服务提供者熔断使用Spring Cloud服务不需此配置
+ * @Description: 此配置只用于Dubbo服务提供者熔断使用Spring Cloud服务不需此配置
  */
 @Configuration
 public class DubboSentinelConfiguration {
